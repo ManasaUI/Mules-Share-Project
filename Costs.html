@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Created by Manasa Eppa -->
+		
+		<title> UCM Mules Share </title>
+		<meta charset="UTF-8">
+	
+		<link rel="stylesheet" type="text/css" href="cssfile.css">
+		<script type="text/javascript" src="mainJs.js"></script>
+		
+		 
+		
+	</head>
+	
+	<body>
+		<div id="wrapper">
+		
+			<div id="callout">  <!--creating a top contact bar using the div element -->
+				<p> For support call <b>123-456-7890</b> </p>
+			</div>
+		
+			<div id="firstpic">
+			<img src="titlepic.jpg" alt= "title"/> <!-- putting the logo as a header image -->
+			</div>
+			
+			<div id="nav"> <!--creating a navigation bar -->
+					<ul>
+					<li> <a href="mainpage.html">Home </a> </li> <!-- home tab -->
+					<li> <a href="Share.html">Share </a> </li> <!-- share tab  -->
+					<li> <a href="Shuttle.html">Ride/Travel</a> </li> <!-- Ride/travel tab  -->
+					<li> <a href="Requirements.html">Requirements to enter UCM</a> </li> <!-- requirements tab -->
+					<li   class="housepage"> <a href="Costs.html">UCM cost calulator</a> </li> <!-- cost calculator tab  -->
+					<li> <a href="CareerAfterGraduation.html">Career after grad</a> </li> <!-- career tab -->
+					<li> <a href="contactus.html">Contact us </a> </li> <!-- student names and IDs tab -->
+					</ul>
+			</div>
+			
+			<div id="secondpic">
+				<img src="ucmcostcal.jpg" width="1020px" alt="roomshare picture"/>
+			</div >
+			
+			
+			
+			<div id="pagebody">
+				<div style="float:left">  
+				<h3 align="center">UCM GRADUATE COST CALCULATOR</h3>
+				<div id="theradios">This cost calculator is designed to provide you with an estimation of your costs to attend the University of Central Missouri. 
+				Costs for personal expenses and dependents are not included in the estimates below. 
+				Note that some additional programs have differential tuition and/or additional fee requirements. 
+				Please also note that all tuition and fees are subject to change annually. 
+				If you are uncertain about your specific program's costs, contact your program directly.</div>	
+				
+			<div id="courseInfo" align="center" style="width: 100">
+				<table>
+				
+				<tr>
+				<th>Degree Program</th>
+				<th>Graduate Co-Ordinator</th>
+				<th>Phone</th>
+				</tr>
+				<tr>
+				<td>Accountancy - MA</td>
+				<td>Janice Klimek</td>
+				<td>660-543-8553</td>
+				</tr>
+				<tr>
+				<td>Applied Mathematics -MS</td>
+				<td>Jinhua Tao</td>
+				<td>660-543-8896</td>
+				</tr>
+				<tr>
+				<td>Biology - MS</td>
+				<td>John Gole</td>
+				<td>660-543-8827</td>
+				</tr>
+				<tr>
+				<td>Computer Science - MS</td>
+				<td>Mahmoud Yousef</td>
+				<td>660-543-8892</td>
+				</tr>
+				<tr>
+				<td>Counseling - MS</td>
+				<td>Nancy Forth</td>
+				<td>660-543-8093</td>
+				</tr>
+				<tr>
+				<td>English - MA</td>
+				<td>Josh Taft</td>
+				<td>660-543-8665</td>
+				</tr>
+				<tr>
+				<td>CIS and Information Technology - MS</td>
+				<td>Sam Ramanujan</td>
+				<td>660-441-0496</td>
+				</tr>
+				<tr>
+				<td>Kinesiology - MS</td>
+				<td>Steve Burns</td>
+				<td>660-543-8890</td>
+				</tr>
+				
+				</table>
+			</div>
+							
+				<div id="costSection" align="center">  
+				<h3>Cost Calculator</h3>
+				<table>
+				<tr>
+				<td>First Name</td>
+				<td><input type="text" id = "fName" PlaceHolder="First Name"></input></td>
+				</tr>
+				<tr>
+				<td>Last Name</td>
+				<td><input type="text" id = "lName" PlaceHolder="Last Name"></input></td>
+				</tr>
+				<tr>
+				<td>DOB</td>
+				<td><input type="text" id = "DOB" PlaceHolder="DOB"></input></td>
+				</tr>
+				<tr>
+				<td>Phone</td>
+				<td><input type="mobile" id  = "mobile" PlaceHolder="Phone"></input></td>
+				</tr>
+				<tr>
+				<td>Email Id</td>
+				<td><input type="email" id = "emailId" PlaceHolder="Email ID"></input></td>
+				</tr>
+				<tr>
+				<td>Interested in</td><br></br>
+				</tr>
+				<tr>
+				<td>Graduate <input type="radio" name = "CourseLevel" id = "gcourse">($324.05/hour)</input></td>
+				<td>Under Graduate <input type="radio" name="CourseLevel" id = "ugcourse">($429.70/hour)</input></td>
+				</tr>
+				<tr>
+				<td>Number Of Credit Hours</td>
+				<td><input type="number" min="9" max="15" id = "credit" PlaceHolder="Credit Hours"></input></td>
+				</tr>
+				
+
+				
+				</table>
+				
+				<input type="submit" name = "calculate" value="Calculate" align="middle" onclick="calculateCost()">
+				<p id = "finalFee"></p>
+				</div>
+			</div>
+			
+			
+			<div id="futer">  
+				 <div id="lastlogo"><img src="ucm logo.png" alt= "ucm logo"/> </div>
+				 <div id="lastnam"> <p> <br/>Manasa Eppa (123)456-789 </p> </div>
+			</div>
+
+		</div>
+	
+	</body>
+	
+</html>

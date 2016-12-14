@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Created by Manasa Eppa-->
+		
+		<title> UCM Mules Share </title>
+		<meta charset="UTF-8">
+	
+		<link rel="stylesheet" type="text/css" href="cssfile.css">
+		<script type="text/javascript" src="mainJs.js"></script>
+		
+		 
+		
+	</head>
+	
+	<body>
+		<div id="wrapper">
+		
+			<div id="callout">  <!--creating a top contact bar using the div element -->
+				<p> For support call <b>123-456-7890</b> </p>
+			</div>
+		
+			<div id="firstpic">
+			<img src="titlepic.jpg" alt= "title"/> <!-- putting the logo as a header image -->
+			</div>
+			
+			<div id="nav"> <!--creating a navigation bar -->
+					<ul>
+					<li> <a href="mainpage.html">Home </a> </li> <!-- home tab -->
+					<li  class="housepage"> <a href="Share.html">Share </a> </li> <!-- share tab  -->
+					<li> <a href="Shuttle.html">Ride/Travel</a> </li> <!-- Ride/travel tab  -->
+					<li> <a href="Requirements.html">Requirements to enter UCM </a> </li> <!-- requirements tab -->
+					<li> <a href="Costs.html">UCM cost calulator</a> </li> <!-- cost calculator tab  -->
+					<li> <a href="CareerAfterGraduation.html">Career after grad</a> </li> <!-- career tab -->
+					<li> <a href="contactus.html">Contact us </a> </li> <!-- student names and IDs tab -->
+					</ul>
+			</div>
+			
+			<div id="secondpic">
+				<img src="sharepic.png" width="1020px" alt="share picture"/>
+			</div>
+			
+			
+			<div id="theradios" >
+				Room Share<input type="radio" id = "Room" name = "share" onclick="changeShareContent('Room')">
+				Ride Share<input type="radio" id = "Ride" name = "share" onclick="changeShareContent('Ride')">
+				Share E Books<input type="radio" id = "Share E Books" name = "share" onclick="changeShareContent('E Book')">
+				Donate<input type="radio" name = "share" id = "Donate" onclick="changeShareContent('Donor/Recepient')">
+				Resale <input type="radio" name = "share" id = "Resale" onclick="changeShareContent('Resale')">
+			</div>
+			
+			<!--Info Changes as Radio button gets Clicked-->
+			
+			<div id="shareContent" class = "hide">
+				<div id="sectionone" style="float:left">  
+				<h3 id ="available"></h3>
+				<iframe src="DonorDynamicTable.html" width="100%" height="100%"></iframe>
+				
+				</div>
+				<div id="sectionTwo"  style="float: right">  
+				<h3 id = "required"></h3>
+				<iframe src="RecepientDynamicTable.html" width="100%" height="100%"></iframe>	
+				</div>
+				
+			</div>		<br/>
+			
+			<div id="futer">  
+				 <div id="lastlogo"><img src="ucm logo.png" alt= "ucm logo"/> </div>
+				 <div id="lastnam"> <p> <br/>Manasa Eppa (123)456-789 </p> </div>
+			</div>
+
+		</div>
+	
+	</body>
+	
+</html>

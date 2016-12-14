@@ -1,0 +1,156 @@
+body{
+		background-color : #E8E6E6;
+		font-family : "Times New Roman", Georgia, Serif;
+		font-size : 18px;
+	}
+
+#wrapper {
+		margin: 0 auto;
+		max-width: 1020px;
+		width: 98%;
+		background: white;
+		border: 1px solid black;
+	}
+
+#callout {
+		width: 100%;
+		height : auto;
+		background: black;
+	}
+	
+#callout  p{
+		text-align : right;
+		color: #FFFFFF;
+		padding: 1%;
+		font-size : 13px;
+	}
+#firstpic {
+		width: 96%;
+		text-align: center;
+	}
+
+#nav ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 10px;
+	}
+	
+#nav ul li {
+		float: left;
+		border: 1px solid #B22222;
+		width: 14%;
+		height: 5%;
+	}
+	
+#nav ul li a {
+		background-color: #B22222;
+		display: block;
+		padding: 5% 12%;
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size: 14px;
+		text-decoration: none;
+		text-align: center;
+	}
+	
+#nav ul li a:hover{
+		background-color: white;
+		color: #B22222;
+	}
+
+#nav ul li.housepage a{
+		background-color: white;
+		color: #B22222;
+	}
+#secondpic {
+		width: 50%;
+	}
+
+#thequote {
+		text-align: center;
+	}
+
+	
+#leftside{
+
+		width : 522px;
+		height: 320px;
+		float : left;
+		padding : 2%;
+}
+
+#futer{
+		clear: both; /*clearing the float */
+		background: black;
+		height: 110px;
+		
+}
+
+#theradios {
+		padding : 5%;
+
+	}
+
+#lastlogo{
+		float: left;
+}
+.hide
+{
+	display: none;
+}
+
+.visible
+{
+	display: inline;
+}
+#sectionone, #sectionTwo{
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #dddddd;
+    border-radius: 25px;
+    width: 400px;
+    height: 600px;
+    overflow: auto;
+}
+#Source, #Destination{
+    
+    padding: 10px 40px; 
+    border-radius: 25px;
+    width: 400px;
+    height: 400px;
+    overflow: auto;
+}
+#lastnam p{
+		color: white;
+		text-align: right;
+		padding: 2%;
+}
+
+#pagebody{
+		clear: both;
+		height: 100%;
+}
+
+#contactimage{
+		text-align: center;
+}
+
+#info
+{  
+    overflow: auto;
+    
+}
+
+#sectionTwo
+{
+
+width: 435px !important;
+}
+
+#costSection,#requirementsSection
+   { 
+    padding: 10px 40px; 
+    width: 400px;
+    height: 100%;
+    overflow: auto;
+}

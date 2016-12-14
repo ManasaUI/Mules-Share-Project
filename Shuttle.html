@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Created by Manasa Eppa -->
+
+		<title> UCM Mules Share </title>
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="cssfile.css">
+		<script type="text/javascript" src="mainJs.js"></script>
+
+
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+
+			<div id="callout">  <!--creating a top contact bar using the div element -->
+				<p> For support call <b>123-456-7890</b> </p>
+			</div>
+
+			<div id="firstpic">
+			<img src="titlepic.jpg" alt= "title"/> <!-- putting the logo as a header image -->
+			</div>
+
+			<div id="nav"> <!--creating a navigation bar -->
+					<ul>
+					<li> <a href="mainpage.html">Home </a> </li> <!-- home tab -->
+					<li> <a href="Share.html">Share </a> </li> <!-- share tab  -->
+					<li   class="housepage"> <a href="Shuttle.html">Ride/Travel</a> </li> <!-- Ride/travel tab  -->
+					<li> <a href="Requirements.html">Requirements to enter UCM </a> </li> <!-- requirements tab -->
+					<li> <a href="Costs.html">UCM cost calulator</a> </li> <!-- cost calculator tab  -->
+					<li> <a href="CareerAfterGraduation.html">Career after grad</a> </li> <!-- career tab -->
+					<li> <a href="contactus.html">Contact us </a> </li> <!-- student names and IDs tab -->
+					</ul>
+			</div>
+
+			<div id="secondpic">
+				<img src="carpool-rideshare.jpg" width="1020px" alt="roomshare picture"/>
+			</div >
+
+
+
+		<div id="pagebody">
+				<h3 align="center">UCM SHUTTLE INFORMATION</h3>
+				<div id="theradios">The university considered the shuttle bus service as a way to improve transportation for a
+				growing number of UCM students who are traveling to the UCM Summit Center to participate in
+				programs such as computer science, computer information systems, and information technology.
+				Many of these riders are international students who do not have personal vehicles.</div>
+			<div id="Source" style="float: left">
+				<h3>WARRENSBURG TO LEE SUMMIT</h3>
+				<table border="1">
+
+				<tr>
+				<th>
+				TIMINGS
+				</th>
+				<th>
+				SOURCE
+				</th>
+				<th>
+				DESTINATION
+				</th>
+				<th>
+				DEPART TIME
+				</th>
+				</tr>
+				<tr>
+				<td>MON-FRI</td>
+				<td>WGB</td>
+				<td>SUMMIT CENTER</td>
+				<td>7:30 am</td>
+				<tr>
+				<td>MON-FRI</td>
+				<td>WGB</td>
+				<td>SUMMIT CENTER</td>
+				<td>9:30 am</td>
+				</tr>
+				<tr>
+				<td>MON-FRI</td>
+				<td>WGB</td>
+				<td>SUMMIT CENTER</td>
+				<td>11:30 am</td>
+				</tr>
+				</tr>
+				<tr>
+				<td>MON-FRI</td>
+				<td>WGB</td>
+				<td>SUMMIT CENTER</td>
+				<td>4:30 pm</td>
+				</tr>
+
+				<tr>
+				<td>SATURDAY</td>
+				<td>WGB</td>
+				<td>SUMMIT CENTER</td>
+				<td>7:00 pm</td>
+				</tr>
+				</table>
+			</div>
+
+			<!--REVERSE	-->
+
+			<div id="Destination" style="float: right">
+				<h3>LEE SUMMIT TO WARRENSBURG</h3>
+				<table border="1">
+				<tr>
+				<th>
+				TIMINGS
+				</th>
+				<th>
+				SOURCE
+				</th>
+				<th>
+				DESTINATION
+				</th>
+				<th>
+				DEPART TIME
+				</th>
+				</tr>
+				<tr>
+				<td>MON-FRI</td>
+
+				<td>SUMMIT CENTER</td>
+				<td>WGB</td>
+				<td>12:30 pm</td>
+				</tr>
+				<tr>
+				<td>MON-FRI</td>
+				<td>SUMMIT CENTER</td>
+				<td>WGB</td>
+				<td>6:30 pm</td>
+				</tr>
+				<tr>
+				<td>MON-FRI</td>
+				<td>SUMMIT CENTER</td>
+				<td>WGB</td>
+				<td>9:15 pm</td>
+				</tr>
+				<tr>
+				<td>MON-FRI</td>
+				<td>SUMMIT CENTER</td>
+				<td>WGB</td>
+				<td>5:15 pm</td>
+				</tr>
+				</table>
+			</div>
+		</div>
+		
+		<div id = "rideInfo">
+		<div id = "busTimings" style="width: 50%;height: 100%;float: left">
+		<h3 style="text-align:center">Shuttle Timings</h3>
+			<table align="center">
+			<tr>
+			<td>Enter your Class timing</td>
+			<td><input type="text" id = "classTime" PlaceHolder="Enter Your Class Time"></input></td>
+			</tr>
+			<tr>
+			<td>
+
+			<input type="submit" value="getTimings" onclick= "busTimings()">
+
+
+			</td>
+
+			</tr>
+			</table>
+			<p id = "starts"></p>
+			<p  id = "ends"></p>
+		</div>
+		<div id = "carRide" style="width: 50%;height: 100%;float: right">
+		<h3 style="text-align:center">Car Ride Info</h3>
+			<table align="center">
+			<tr>
+			<td>Enter fuel rate per gallon</td>
+			<td><input type="number" id = "rate" PlaceHolder="Fuel Rate"></input></td>
+			</tr>
+			<tr>
+			<td>Enter car mileage</td>
+			<td><input type="number" id = "mileage" PlaceHolder="Mileage"></input></td>
+			</tr>
+			<tr>
+			<td>Enter number of miles</td>
+			<td><input type="number" id = "miles" PlaceHolder="Miles"></input></td>
+			</tr>
+			<tr>
+			<td>Enter number of people</td>
+			<td><input type="number" id = "people" PlaceHolder="No Of People"></input></td>
+			<td><input type="submit" value="getFare" onclick= "rideFare()" >
+			</td>
+			</tr>
+			</table>
+			<p id = "charge"></p>
+
+		</div>
+
+
+
+
+
+		</div>
+
+		<div id="futer">
+				 <div id="lastlogo"><img src="ucm logo.png" alt= "ucm logo"/> </div>
+<div id="lastnam"> <p> <br/>Manasa Eppa (123)456789 </p> </div>
+				
+		</div>
+
+		</div>
+	</body>
+
+</html>
